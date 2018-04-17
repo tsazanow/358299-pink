@@ -1,0 +1,390 @@
+.options {
+  width: 320px;
+
+  margin: 0 auto;
+  margin-bottom: 6px;
+  padding: 0;
+
+  background-color: @section-color;
+  border: none;
+
+  &--os {
+    margin-bottom: 36px;
+  }
+}
+
+.options__list {
+  .list-reset();
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+
+  margin: 0 auto;
+}
+
+.options__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  min-height: 60px;
+
+  margin: auto;
+  margin-bottom: 22px;
+
+  &:first-child {
+    margin-top: 27px;
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.options--os .options__item {
+  margin-top: 15px;
+  margin-bottom: 16px;
+
+  &:first-child {
+    margin-top: 23px;
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-top: 0;
+    margin-bottom: 33px;
+  }
+}
+
+.options__legend {
+  box-sizing: border-box;
+  width: 320px;
+
+  margin: 0 auto;
+  padding: 0 35px;
+  padding-top: 35px;
+
+  background-color: @section-color;
+}
+
+.options__checkbox {
+  display: none;
+}
+
+.options__checkbox + .options__title {
+  position: relative;
+  display: block;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 70px;
+
+  font-size: 18px;
+  color: @menu-color;
+  font-weight: 400;
+  line-height: 30px;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: -4px;
+    left: 0;
+
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+}
+
+.options__checkbox:checked + .options__title::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 16px;
+  top: 8px;
+  left: 8px;
+
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 16px;
+}
+
+.options__radio {
+  display: none;
+}
+
+.options__radio + .options__title {
+  position: relative;
+  display: block;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 70px;
+
+  font-size: 18px;
+  color: @menu-color;
+  font-weight: 400;
+  line-height: 30px;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    top: 0;
+    left: 0;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+.options__radio:checked + .options__title::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 11px;
+  left: 11px;
+
+  border-radius: 50%;
+  background-color: @info-color;
+}
+
+.options__title {
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid @menu-color;
+  }
+
+  &:active::before {
+    border: 2px solid @info-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .options {
+    width: 620px;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
+
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+
+    &--os {
+      margin-bottom: 57px;
+    }
+
+    &--fun {
+      margin-bottom: 57px;
+    }
+  }
+
+  .options__list {
+    .list-reset();
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+
+    margin: 0 auto;
+  }
+
+  .options--fun .options__list {
+    min-height: 540px;
+  }
+
+  .options--os .options__list {
+    min-height: 287px;
+  }
+
+  .options__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    min-height: 60px;
+
+    margin: auto;
+    margin-left: 59px;
+
+    &:first-child {
+      margin-top: 32px;
+    }
+
+    &:last-child {
+      margin-bottom: 39px;
+    }
+  }
+
+  .options__legend {
+    box-sizing: border-box;
+    width: auto;
+
+    padding: 0 35px;
+    padding-top: 0;
+
+    background-color: #ffffff;
+  }
+
+  .options--fun .options__legend {
+    margin-left: 82px;
+  }
+
+  .options__checkbox + .options__title {
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
+  }
+
+  .options__radio + .options__title {
+    padding-left: 60px;
+  }
+
+  .options--os .options__legend {
+    margin-left: 107px;
+  }
+
+  .options--os .options__item {
+    margin-top: 15px;
+    margin-bottom: 16px;
+
+    &:first-child {
+      margin-top: 32px;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-top: 0;
+      margin-bottom: 33px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .options {
+    width: 940px;
+
+    margin: 0;
+
+    &--os {
+      width: 432px;
+      margin-left: auto;
+    }
+
+    &--fun {
+      min-height: 228px;
+      margin-bottom: 57px;
+    }
+  }
+
+  .options__item {
+    width: auto;
+    min-height: 60px;
+
+    margin: auto;
+    margin-left: 59px;
+  }
+
+  .options--os .options__item {
+    margin-top: 15px;
+    margin-bottom: 16px;
+    margin-left: 75px;
+
+    &:first-child {
+      margin-top: 34px;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-top: 0;
+      margin-bottom: 33px;
+    }
+  }
+
+  .options--os .options__legend {
+    margin-left: 29px;
+  }
+
+  .options--fun .options__legend {
+    margin-left: 238px;
+  }
+
+  .options--fun .options__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 220px;
+  }
+
+  .options--fun .options__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    min-height: 60px;
+
+    margin: auto;
+
+    &:nth-child(1) {
+      order: 1;
+      margin-right: 0;
+      margin-left: 60px;
+      margin-top: -13px;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+      margin-right: 0;
+      margin-left: 60px;
+      margin-top: 24px;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+      margin-left: 65px;
+      margin-top: -13px;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+      margin-left: 65px;
+      margin-top: 24px;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+      margin-right: 15px;
+      margin-left: 0;
+      margin-top: -13px;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+      margin-right: 15px;
+      margin-left: 0;
+      margin-top: 24px;
+    }
+  }
+
+  .options--fun .options__title {
+    box-sizing: border-box;
+    width: 260px;
+    padding-left: 57px;
+    margin-left: auto;
+  }
+}

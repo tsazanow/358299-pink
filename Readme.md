@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Артём Сазанов](https://up.htmlacademy.ru/adaptive/14/user/358299).
-* Наставник: `Неизвестно`.
+* Студент: [Артём Сазанов](https://up.htmlacademy.ru/adaptive/13/user/358299).
+* Наставник: [Сергей Зубов].
 
 ---
 

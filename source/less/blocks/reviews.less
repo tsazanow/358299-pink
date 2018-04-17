@@ -1,0 +1,165 @@
+.reviews {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+}
+
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  margin: 0 auto;
+}
+
+.reviews__list {
+  width: 276px;
+}
+
+.reviews__toggles {
+  width: 150px;
+  align-self: center;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+.reviews__author-name {
+  font-family: @bold-font;
+  font-size: 18px;
+  font-style: normal;
+  color: #000000;
+  font-weight: 700;
+  line-height: 30px;
+  order: 1;
+}
+
+.reviews__author-info {
+  font-size: 0;
+}
+
+.reviews__text {
+  font-size: 14px;
+  color: @menu-color;
+  font-weight: 400;
+  line-height: 30px;
+  order: 3;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+  }
+
+  .reviews__list {
+    width: 620px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 30px;
+    order: 1;
+  }
+
+  .reviews__author-info {
+    margin-top: 1px;
+
+    font-size: 14px;
+    color: @menu-color;
+    font-weight: 400;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .reviews__text {
+    margin-bottom: 34px;
+    font-size: 18px;
+
+    order: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 940px;
+    min-height: 405px;
+
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 79px 63px;
+    background-position: center 80px;
+  }
+
+  .reviews__list {
+    position: relative;
+    width: 940px;
+    margin: auto;
+    margin-top: 140px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    width: 690px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .reviews__author-name {
+    font-family: @bold-font;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 30px;
+    order: 1;
+  }
+
+  .reviews__author-info {
+    margin-top: 0;
+
+    font-size: 18px;
+    color: @menu-color;
+    font-weight: 400;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .reviews__text {
+    margin-bottom: 35px;
+    margin-top: 51px;
+    font-size: 18px;
+
+    order: 0;
+  }
+}

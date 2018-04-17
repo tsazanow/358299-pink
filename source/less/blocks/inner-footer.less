@@ -1,0 +1,161 @@
+.inner-footer {
+  width: 320px;
+  min-height: 284px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: #ffffff;
+  z-index: 6;
+}
+
+.inner-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 280px;
+  min-height: 284px;
+
+  margin: 0 auto;
+}
+
+.inner-footer--hide {
+  display: none;
+}
+
+.inner-footer__link,
+.inner-footer__social,
+.inner-footer__developer {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.inner-footer__link {
+  width: 150px;
+}
+
+.inner-footer__social {
+  width: 200px;
+}
+
+.inner-footer__developer {
+  width: 140px;
+}
+
+.inner-footer__logo-stars {
+  display: none;
+}
+
+.inner-footer__logo-blue {
+  fill: @menu-color;
+}
+
+.inner-footer__link-logo {
+  &:hover .inner-footer__logo-blue,
+  &:focus .inner-footer__logo-blue {
+    fill: @info-color;
+  }
+
+  &:active .inner-footer__logo-blue {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .inner-footer {
+    display: flex;
+    align-items: center;
+    width: 660px;
+    min-height: 127px;
+
+    margin: 0 auto;
+    margin-top: auto;
+  }
+
+  .inner-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 620px;
+    min-height: 127px;
+
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .inner-footer--hide {
+    display: flex;
+  }
+
+  .inner-footer__link {
+    width: 150px;
+
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .inner-footer__social {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .inner-footer__developer {
+    width: 150px;
+
+    margin-right: 0;
+  }
+
+  .inner-footer__logo-stars {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-footer {
+    width: 100%;
+    min-height: 197px;
+
+    margin: 0 auto;
+    margin-top: auto;
+  }
+
+  .inner-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .inner-footer--hide {
+    display: flex;
+  }
+
+  .inner-footer__logo-stars {
+    display: block;
+    fill: @menu-color;
+  }
+
+  .inner-footer__logo-blue {
+    display: none;
+  }
+
+  .inner-footer__link {
+    margin-top: -6px;
+  }
+
+  .inner-footer__link-logo {
+    &:hover .inner-footer__logo-stars,
+    &:focus .inner-footer__logo-stars {
+      fill: @info-color;
+    }
+
+    &:active .inner-footer__logo-stars {
+      opacity: 0.3;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.page-main {
+  width: 320px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: #ffffff;
+
+  &--photo {
+    padding-bottom: 26px;
+  }
+}
+
+.page-main__text {
+  width: 280px;
+
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding: 0;
+  padding-top: 43px;
+
+  font-size: 14px;
+  color: @menu-color;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+
+  &--down {
+    width: 255px;
+
+    padding-top: 14px;
+  }
+
+  &--photo {
+    width: 252px;
+
+    margin: 0 auto;
+    margin-bottom: 49px;
+    padding: 0;
+    padding-top: 43px;
+  }
+}
+
+.page-main__text-invite {
+  font-size: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    width: 660px;
+
+    margin: 0 auto;
+
+    &--photo {
+      padding-bottom: 0;
+    }
+  }
+
+  .page-main__text {
+    width: 490px;
+
+    margin: 0 auto;
+    margin-bottom: 71px;
+    padding: 0;
+    padding-top: 92px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+
+    &--photo {
+      margin: 0 auto;
+      margin-bottom: 76px;
+    }
+
+    &--form {
+      margin-bottom: 73px;
+    }
+
+    &--down {
+      margin: 0 auto;
+      margin-bottom: 69px;
+      padding: 0;
+      padding-top: 42px;
+    }
+  }
+
+  .page-main__text-invite {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    width: 100%;
+
+    margin: 0 auto;
+
+    &--photo {
+      padding-bottom: 26px;
+    }
+  }
+
+  .page-main__text {
+    width: 800px;
+
+    margin-bottom: 71px;
+    padding: 0;
+    padding-top: 91px;
+
+    &--photo {
+      width: 600px;
+
+      margin: 0 auto;
+      margin-bottom: 88px;
+    }
+
+    &--down {
+      margin: 0 auto;
+      margin-bottom: 68px;
+      padding: 0;
+      padding-top: 0;
+    }
+  }
+}
