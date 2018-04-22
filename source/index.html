@@ -85,7 +85,7 @@
           </li>
           <li class="features__item">
             <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
           </li>
           <li class="features__item">
             <h3 class="features__title">Заводит новых друзей</h3>
@@ -94,8 +94,8 @@
         </ul>
         <div class="features__research-wrapper">
           <div class="features__research">
-            <b class="features__research-title">Эффект на 24 часа!</b>
-            <p class="features__research-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <b class="features__research-title">Эффект на&nbsp;24 часа!</b>
+            <p class="features__research-text">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
             <p class="features__research-info">
               <a href="#">Узнать больше об исследовании</a>
             </p>
@@ -105,18 +105,28 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <div class="reviews__list slider__list">
-            <span class="slider__toggle-prev">Предыдущий</span>
-            <blockquote class="reviews__item slider__item">
+            <button class="slider__btn-prev" type="button"><span class="visually-hidden">Предыдущий</span></button>
+            <blockquote class="reviews__item slider__item slider__item--active">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__author-info">25 лет, водитель трамвая</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <span class="slider__toggle-next">Следующий</span>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Петр Иванов</cite>
+              <p class="reviews__author-info">45 лет, путешественник</p>
+              <p class="reviews__text">«Pink - мой постоянный спутник в странствиях по миру»</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Лена Сидорова</cite>
+              <p class="reviews__author-info">20 лет, студентка</p>
+              <p class="reviews__text">«Это то, что я давно искала! Не знаю как раньше жила без этого приложения!»</p>
+            </blockquote>
+            <button class="slider__btn-next" type="button"><span class="visually-hidden">Следующий</span></button>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <span class="slider__toggle slider__toggle--active">1</span>
-            <span class="slider__toggle">2</span>
-            <span class="slider__toggle">3</span>
+            <span class="slider__toggle slider__toggle--active">Первый слайд</span>
+            <span class="slider__toggle">Второй слайд</span>
+            <span class="slider__toggle">Третий слайд</span>
           </p>
         </div>
       </section>
@@ -166,9 +176,9 @@
             </div>
           </div>
           <p class="subs__toggles slider__toggles">
-            <span class="slider__toggle">1</span>
-            <span class="slider__toggle slider__toggle--active">2</span>
-            <span class="slider__toggle">3</span>
+            <span class="slider__toggle">Первый тариф</span>
+            <span class="slider__toggle slider__toggle--active">Второй тариф</span>
+            <span class="slider__toggle">Третий тариф</span>
           </p>
         </div>
       </section>
