@@ -52,8 +52,8 @@
   width: 230px;
 
   margin: 0 auto;
-  margin-top: 32px;
-  margin-bottom: 7px;
+  margin-top: 36px;
+  margin-bottom: 37px;
 
   font-family: @light-font;
   font-size: 24px;
@@ -65,9 +65,13 @@
 .contacts__item {
   width: 280px;
 
-  margin-top: 34px;
+  margin-top: 0;
 
   text-align: center;
+
+  &:first-child {
+    margin-bottom: 1px;
+  }
 
   &:nth-child(2) {
     margin-top: 22px;
@@ -252,7 +256,8 @@
 
   .contacts__title {
     margin: 0;
-    margin-bottom: 27px;
+    margin-top: -6px;
+    margin-bottom: 26px;
     margin-right: 14px;
 
     font-size: 18px;
@@ -298,7 +303,7 @@
     }
 
     &:last-child {
-      margin-top: 43px;
+      margin-top: 46px;
       margin-bottom: 23px;
       margin-right: 7px;
 
