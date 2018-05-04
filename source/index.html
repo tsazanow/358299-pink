@@ -10,22 +10,21 @@
     <link href="fonts/opensansbold.woff2" rel="preload" as="font">
   </head>
   <body>
-    <div style="display:none">
+    <!-- <div style="display:none">
       <include src="build/img/sprite.svg"></include>
-    </div>
+    </div> -->
     <header class="page-header page-header--max">
       <nav class="main-nav main-nav--opened main-nav--max">
-        <!-- класс "main-nav--nojs" делает контент доступным при выключенном JS  -->
         <div class="main-nav__wrapper">
           <a class="main-nav__logo-link" href="index.min.html" aria-label="Ссылка на главную Pink">
             <svg class="main-nav__logo-small" width="75" height="22" role="img">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#sp-logo-pink-white-mobile"></use>
+              <use xlink:href="img/sprite.svg#logo-small"></use>
             </svg>
             <svg class="main-nav__logo-big" width="147" height="40" role="img">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#sp-logo-pink-white-tablet"></use>
+              <use xlink:href="img/sprite.svg#logo-big"></use>
             </svg>
-            <svg class="main-nav__logo-stars" width="147" height="40" role="img">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#sp-logo-pink-white-desktop"></use>
+            <svg class="main-nav__logo-stars" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="40" role="img">
+              <use xlink:href="img/sprite.svg#logo-stars"></use>
             </svg>
           </a>
           <button class="main-nav__button" type="button">
@@ -194,12 +193,12 @@
           <div class="contacts__list">
             <div class="contacts__item">
               <p class="contacts__title">Звоните:</p>
-              <p class="contacts__text">+7 (812) 555-66-66</p>
+              <a href="tel:+78125556666" class="contacts__text">+7 (812) 555-66-66</a>
             </div>
             <div class="contacts__item">
               <p class="contacts__title">Пишите:</p>
               <p class="contacts__text">
-                <a class="contacts__mail" href="#">mail@htmlacademy.ru</a>
+                <a href="mailto:mail@htmlacademy.ru" class="contacts__mail" href="#">mail@htmlacademy.ru</a>
               </p>
             </div>
             <div class="contacts__item">
@@ -214,10 +213,10 @@
           <section class="inner-footer__link">
             <a class="inner-footer__link-logo" href="index.min.html" aria-label="Переход на главную Pink">
               <svg class="inner-footer__logo-blue" width="147" height="40" role="img">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#sp-logo-pink-blue-mobile"></use>
+                <use xlink:href="img/sprite.svg#logo-footer-blue"></use>
               </svg>
               <svg class="inner-footer__logo-stars" width="147" height="40" role="img">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#sp-logo-pink-blue-desktop"></use>
+                <use xlink:href="img/sprite.svg#logo-footer-stars"></use>
               </svg>
             </a>
           </section>
@@ -226,21 +225,21 @@
               <li class="social__item">
                 <a class="social__logo" href="https://twitter.com" aria-label="Переход в Twitter">Twitter
                   <svg class="social__logo-twitter" width="19" height="15" role="img">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#sp-icon-twitter"></use>
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__logo" href="https://facebook.com" aria-label="Переход на Facebook">Facebook
                   <svg class="social__logo-facebook" width="9" height="19" role="img">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#sp-icon-facebook"></use>
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__logo" href="https://youtube.com" aria-label="Переход на Youtube">Youtube
                   <svg class="social__logo-youtube" width="15" height="14" role="img">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#sp-icon-youtube"></use>
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
                   </svg>
                 </a>
               </li>
@@ -250,8 +249,8 @@
             <p class="developer__title">Разработано</p>
             <p class="developer__link">
               <a class="developer__link-image" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">HTML Academy
-                <svg class="developer__logo" width="27" height="34" role="img">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#sp-logo-htmlacademy"></use>
+                <svg class="developer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" role="img">
+                  <use xlink:href="img/sprite.svg#logo-academy"></use>
                 </svg>
               </a>
             </p>
