@@ -11,27 +11,27 @@
 /*jshint eqnull:true */
 var ua = navigator.userAgent;
 if ( window.HTMLPictureElement && ((/ecko/).test(ua) && ua.match(/rv\:(\d+)/) && RegExp.$1 < 45) ) {
-	addEventListener("resize", (function() {
-		var timer;
-		var dummySrc = document.createElement("source");
-		var fixRespimg = function(img) {
-			var source, sizes;
-			var picture = img.parentNode;
-			if (picture.nodeName.toUpperCase() === "PICTURE") {
-				source = dummySrc.cloneNode();
-				picture.insertBefore(source, picture.firstElementChild);
-				setTimeout(function() {
-					picture.removeChild(source);
-				});
-			} else if (!img._pfLastSize || img.offsetWidth > img._pfLastSize) {
-				img._pfLastSize = img.offsetWidth;
-				sizes = img.sizes;
-				img.sizes += ",100vw";
-				setTimeout(function() {
-					img.sizes = sizes;
-				});
-			}
-		};
+addEventListener("resize", (function() {
+	var timer;
+	var dummySrc = document.createElement("source");
+	var fixRespimg = function(img) {
+		var source, sizes;
+		var picture = img.parentNode;
+		if (picture.nodeName.toUpperCase() === "PICTURE") {
+			source = dummySrc.cloneNode();
+			picture.insertBefore(source, picture.firstElementChild);
+			setTimeout(function() {
+				picture.removeChild(source);
+			});
+		} else if (!img._pfLastSize || img.offsetWidth > img._pfLastSize) {
+			img._pfLastSize = img.offsetWidth;
+			sizes = img.sizes;
+			img.sizes += ",100vw";
+			setTimeout(function() {
+				img.sizes = sizes;
+			});
+		}
+	};
 		var findPictureImgs = function() {
 			var i;
 			var imgs = document.querySelectorAll("picture > img, img[srcset][sizes]");
