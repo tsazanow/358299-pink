@@ -53,6 +53,7 @@
 
   border: 2px solid #e5e5e5;
   outline: none;
+  resize: none;
 
   &:hover {
     border: 2px solid @menu-color;
@@ -268,6 +269,11 @@
     border: 2px solid #e5e5e5;
   }
 
+  .contest-form__comment-wrapper {
+    width: 496px;
+    margin: 0 auto;
+  }
+
   .contest-form__comment .contest-form__legend {
     width: 260px;
 
@@ -375,40 +381,39 @@
   }
 
   .contest-form__comment {
+    display: block;
     width: 940px;
-    min-height: 220px;
+    min-height: 222px;
+    margin: 0 auto;
+    margin-bottom: 63px;
 
-    margin-bottom: 65px;
+    border: 2px solid #e5e5e5;
   }
 
   .contest-form__comment .contest-form__legend {
     width: 260px;
 
-    margin-bottom: 0;
-    margin-left: 338px;
+    margin: 0;
+    margin-left: 339px;
   }
 
   .contest-form__comment-wrapper {
-    width: 816px;
-    height: 126px;
+    width: 820px;
+    height: 140px;
 
     margin-bottom: auto;
-    margin-top: 35px;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-top: 36px;
+    margin-right: 58px;
+    margin-left: 58px;
   }
 
   .contest-form__comment-text {
-    // width: 816px;
     width: 100%;
     min-height: 126px;
 
     margin: 0 auto;
-    // margin-bottom: auto;
-    // margin-top: 35px;
-    // margin-right: 60px;
     padding: 14px;
-    padding-left: 16px;
+    padding-left: 18px;
 
     resize: none;
   }
