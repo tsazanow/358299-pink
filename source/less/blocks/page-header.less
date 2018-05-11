@@ -6,6 +6,19 @@
   padding: 0;
 
   background-color: #282828;
+  background-repeat: no-repeat;
+  background-size: 320px 462px;
+  background-position: center 0;
+
+  &--max {
+    background-repeat: no-repeat;
+    background-size:
+      258px 286px,
+      320px 462px;
+    background-position:
+      center 174px,
+      center 0;
+  }
 }
 
 .webp .page-header {
@@ -26,22 +39,6 @@
   background-image:
     url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
-}
-
-.page-header {
-  background-repeat: no-repeat;
-  background-size: 320px 462px;
-  background-position: center 0;
-
-  &--max {
-    background-repeat: no-repeat;
-    background-size:
-      258px 286px,
-      320px 462px;
-    background-position:
-      center 174px,
-      center 0;
-  }
 }
 
 .page-header__title {
@@ -72,8 +69,30 @@
 
     margin: 0 auto;
 
+    background-repeat: no-repeat;
+    background-size: 1200px 729px;
+    background-position: center 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-size: 2400px 1458px;
+    }
+
     &--max {
       min-height: 729px;
+
+      background-repeat: no-repeat;
+      background-size:
+        700px 545px,
+        1200px auto;
+      background-position:
+        center 185px,
+        center 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-size:
+          700px 545px,
+          2400px auto;
+      }
     }
   }
 
@@ -117,31 +136,31 @@
       }
   }
 
-  .page-header {
-    background-repeat: no-repeat;
-    background-size: 1200px 729px;
-    background-position: center 0;
+  // .page-header {
+  //   background-repeat: no-repeat;
+  //   background-size: 1200px 729px;
+  //   background-position: center 0;
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-size: 2400px 1458px;
-    }
+  //   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  //     background-size: 2400px 1458px;
+  //   }
 
-    &--max {
-      background-repeat: no-repeat;
-      background-size:
-        700px 545px,
-        1200px auto;
-      background-position:
-        center 185px,
-        center 0;
+  //   &--max {
+  //     background-repeat: no-repeat;
+  //     background-size:
+  //       700px 545px,
+  //       1200px auto;
+  //     background-position:
+  //       center 185px,
+  //       center 0;
 
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-size:
-          700px 545px,
-          2400px auto;
-      }
-    }
-  }
+  //     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  //       background-size:
+  //         700px 545px,
+  //         2400px auto;
+  //     }
+  //   }
+  // }
 
   .page-header__title {
     width: 495px;
@@ -193,6 +212,30 @@
     width: 100%;
     min-height: 394px;
     margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-size: cover;
+    }
+
+    &--max {
+      background-repeat: no-repeat;
+      background-size:
+        1050px 645px,
+        cover;
+      background-position:
+        251px bottom,
+        center 0;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-size:
+          1050px 645px,
+          cover;
+      }
+    }
   }
 
   .webp .page-header {
@@ -235,31 +278,31 @@
       }
   }
 
-  .page-header {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 0;
+  // .page-header {
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center 0;
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-size: cover;
-    }
+  //   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  //     background-size: cover;
+  //   }
 
-    &--max {
-      background-repeat: no-repeat;
-      background-size:
-        1050px 645px,
-        cover;
-      background-position:
-        251px bottom,
-        center 0;
+  //   &--max {
+  //     background-repeat: no-repeat;
+  //     background-size:
+  //       1050px 645px,
+  //       cover;
+  //     background-position:
+  //       251px bottom,
+  //       center 0;
 
-      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-size:
-          1050px 645px,
-          cover;
-      }
-    }
-  }
+  //     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  //       background-size:
+  //         1050px 645px,
+  //         cover;
+  //     }
+  //   }
+  // }
 
   .page-header__wrapper {
     width: 960px;
