@@ -17,27 +17,36 @@
     padding-bottom: 80px;
 
     background-color: transparent;
+
+    // margin-top: 326px;
+    // padding-top: 380px;
   }
 
   &--min {
     margin-bottom: 30px;
-    margin-top: 262px;
-    padding-bottom: 62px;
+    // margin-top: 262px;
+    padding-bottom: 62px;/**fix**/
+    // padding-bottom: 0;
   }
 
   &--closed {
     margin-top: 0;
     padding-bottom: 0;
+    // margin-bottom: 393px; /**fix**/
+    margin-bottom: 0;
   }
 
   &--max {
     margin-bottom: 382px;
+    padding-top: 462px;
   }
 
   &--nojs {
-    margin-top: 0;
+    // margin-top: 0;
+    margin-top: 262px;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 0; /**fix**/
+    //padding-bottom: 62px;
 
     background-color: transparent;
   }
@@ -110,6 +119,50 @@
   outline: none;
 }
 
+.main-nav__logo-small {
+  width: 75px;
+  height: 22px;
+
+  padding-top: 22px;
+
+  fill: #ffffff;
+}
+
+.main-nav__logo-big {
+  width: 147px;
+  height: 40px;
+  display: none;
+
+  fill: #ffffff;
+}
+
+.main-nav__logo-stars {
+  display: none;
+}
+
+.main-nav__logo-link {
+  display: block;
+  width: auto;
+  min-height: 69px;
+
+  &:hover .main-nav__logo-small,
+  &:focus .main-nav__logo-small {
+    fill: @info-color;
+  }
+
+  &:active .main-nav__logo-small {
+    fill: rgba(255, 255, 255, 30%);
+  }
+}
+
+// .main-nav--closed .main-nav__wrapper {
+//   position: absolute;
+//   top: -262px;
+//   left: 0;
+//   z-index: 60;
+//   width: 320px;
+// }
+
 .main-nav--closed .main-nav__logo-link {
   background-color: rgba(29, 38, 49, 30%);
 }
@@ -153,7 +206,8 @@
 
 .main-nav--opened .main-nav__wrapper {
   position: absolute;
-  top: -261px;
+  top: -262px;
+  // top: -326px;
   left: 0;
   z-index: 60;
   width: 320px;
@@ -210,44 +264,9 @@
   width: auto;
 }
 
-.main-nav__logo-small {
-  width: 75px;
-  height: 22px;
-
-  padding-top: 22px;
-
-  fill: #ffffff;
-}
-
-.main-nav__logo-big {
-  width: 147px;
-  height: 40px;
-  display: none;
-
-  fill: #ffffff;
-}
-
-.main-nav__logo-stars {
-  display: none;
-}
-
-.main-nav__logo-link {
-  display: block;
-  width: auto;
-  min-height: 69px;
-
-  &:hover .main-nav__logo-small,
-  &:focus .main-nav__logo-small {
-    fill: @info-color;
-  }
-
-  &:active .main-nav__logo-small {
-    fill: rgba(255, 255, 255, 30%);
-  }
-}
-
 .main-nav--nojs .main-nav__wrapper {
-  position: static;
+  position: absolute;
+  top: -262px;
   min-height: 0;
   width: 320px;
 }
