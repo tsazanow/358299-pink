@@ -22,13 +22,6 @@
     // padding-top: 380px;
   }
 
-  &--min {
-    margin-bottom: 30px;
-    // margin-top: 262px;
-    padding-bottom: 62px;/**fix**/
-    // padding-bottom: 0;
-  }
-
   &--closed {
     margin-top: 0;
     padding-bottom: 0;
@@ -38,17 +31,25 @@
 
   &--max {
     margin-bottom: 382px;
-    padding-top: 462px;
+   //padding-top: 462px; //fix
   }
 
   &--nojs {
     // margin-top: 0;
     margin-top: 262px;
     margin-bottom: 0;
-    padding-bottom: 0; /**fix**/
-    //padding-bottom: 62px;
+    //padding-bottom: 0; /**fix**/
+    padding-bottom: 462px; //max
 
     background-color: transparent;
+  }
+
+  &--min {
+    min-height: 63px;
+    margin-bottom: 30px;
+    // margin-top: 262px;
+    //padding-bottom: 62px;/**fix**/
+    padding-bottom: 0;
   }
 }
 
